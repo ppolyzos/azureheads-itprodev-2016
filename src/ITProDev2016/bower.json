@@ -10,6 +10,8 @@
     "jquery_appear": "0.3.6",
     "masonry": "^4.1.1",
     "html5shiv": "3.7.3",
-    "respond": "1.4.2"
+    "respond": "1.4.2",
+    "font-awesome": "4.6.1",
+    "simple-line-icons": "^2.3.2"
   }
 }
