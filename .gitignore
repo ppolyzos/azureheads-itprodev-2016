@@ -243,3 +243,8 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/src/ITProDev2016/wwwroot/lib
+
+# Ignore minified files
+*.min.js
+*.min.css

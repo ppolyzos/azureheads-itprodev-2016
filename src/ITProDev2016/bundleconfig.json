@@ -11,6 +11,14 @@
   {
     "outputFileName": "wwwroot/js/site.min.js",
     "inputFiles": [
+      "wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "wwwroot/lib/toastr/toastr.min.js",
+      "wwwroot/waypoints/lib/jquery.waypoints.min.js",
+      "wwwroot/lib/jquery_appear/jquery.appear.js",
+      "wwwroot/lib/masonry/dist/masonry.pkgd.min.js",
+      "wwwroot/js/jquery.plugin.js",
+      "wwwroot/js/jquery.countTo.js",
+      "wwwroot/js/modal-box.js",
       "wwwroot/js/site.js"
     ],
     // Optionally specify minification options
