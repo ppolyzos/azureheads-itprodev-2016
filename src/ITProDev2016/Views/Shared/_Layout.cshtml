@@ -7,6 +7,9 @@
 
     <environment names="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/lib/toastr/toastr.min.css" />
+        <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.css" />
+        
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
     <environment names="Staging,Production">
@@ -15,7 +18,7 @@
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
-    
+
     <!--[if lt IE 9]>
         <script src="lib/html5shiv/dist/html5shiv.js"></script>
         <script src="lib/respond/dest/respond.min.js"></script>
@@ -23,14 +26,12 @@
 
 </head>
 <body>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2016 - ITProDev2016</p>
-        </footer>
+    <div class="preloader-mask">
+        <div class="preloader"></div>
     </div>
-    
+
+    @RenderBody()
+
     <environment names="Development">
         <script src="https://maps.googleapis.com/maps/api/js?v=3&libraries=places"></script>
         <script type="text/javascript" src="lib/jquery/dist/jquery.js"></script>
@@ -49,14 +50,16 @@
         <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
                 asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
                 asp-fallback-test="window.jQuery">
+
         </script>
         <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/bootstrap.min.js"
                 asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
                 asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
+
         </script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>
 
-@RenderSection("scripts", required: false)
+    @RenderSection("scripts", required: false)
 </body>
 </html>
