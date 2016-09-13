@@ -5,6 +5,8 @@
     "outputFileName": "wwwroot/css/site.min.css",
     // An array of relative input file paths. Globbing patterns supported
     "inputFiles": [
+      "wwwroot/lib/toastr/toastr.min.css",
+      "wwwroot/lib/font-awesome/css/font-awesome.css",
       "wwwroot/css/site.css"
     ]
   },
@@ -13,7 +15,7 @@
     "inputFiles": [
       "wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
       "wwwroot/lib/toastr/toastr.min.js",
-      "wwwroot/waypoints/lib/jquery.waypoints.min.js",
+      "wwwroot/lib/waypoints/lib/jquery.waypoints.min.js",
       "wwwroot/lib/jquery_appear/jquery.appear.js",
       "wwwroot/lib/masonry/dist/masonry.pkgd.min.js",
       "wwwroot/js/jquery.plugin.js",
